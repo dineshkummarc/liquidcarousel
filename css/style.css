@@ -1,0 +1,45 @@
+body {
+	background-color:#C2C7C2;
+	background-image:url('../images/text.jpg');
+	font-family: verdana, arial;
+	color: #222;
+	font-size:16px;
+	min-width:320px;
+}
+
+h1 {
+	font-size:28px;
+	font-weight:bold;
+	text-shadow: 2px 3px 5px #C2C7C2;
+	margin-bottom:26px;
+}
+
+a {
+	color:#19510E;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:22px;
+}
+
+.sac {
+	display:block;
+	width:100%;
+	text-align:right;
+	font-style:italic;
+	margin-bottom:45px;
+	font-size:12px;
+}
+
+pre, blockquote {
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+	background-color:#DFE7DD;
+	margin:15px 0;
+	padding:15px;
+}
+
+pre, code {
+	font-family:monospace;
+	font-size:12px;
+}

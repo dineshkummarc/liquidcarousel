@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="jQuery Liquid carousel plugin"/>
+	<title>jQuery Liquid Carousel plugin</title>
+	<link type='text/css' rel='stylesheet' href='css/style.css' />
+	<link type='text/css' rel='stylesheet' href='css/liquidcarousel.css' />
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.liquidcarousel.pack.js"></script>
+	<script type="text/javascript">
+	<!--
+		$(document).ready(function() {
+			$('#liquid1').liquidcarousel({height:129, duration:100, hidearrows:false});
+		});
+	-->
+	</script>
+</head>
+<body>
+
+<h1>jQuery Liquid Carousel plugin</h1>
+
+<div id="liquid1" class="liquid">
+	<span class="previous"></span>
+	<div class="wrapper">
+		<ul>
+			<li><a href="#" title="image 01"><img src="images/01.jpg" width="88" height="126" alt="image 01" border="0" /></a></li>
+			<li><a href="#" title="image 02"><img src="images/02.jpg" width="88" height="126" alt="image 02" border="0" /></a></li>
+			<li><a href="#" title="image 03"><img src="images/03.jpg" width="88" height="126" alt="image 03" border="0" /></a></li>
+			<li><a href="#" title="image 04"><img src="images/04.jpg" width="88" height="126" alt="image 04" border="0" /></a></li>
+			<li><a href="#" title="image 05"><img src="images/05.jpg" width="88" height="126" alt="image 05" border="0" /></a></li>
+			<li><a href="#" title="image 06"><img src="images/06.jpg" width="88" height="126" alt="image 06" border="0" /></a></li>
+			<li><a href="#" title="image 07"><img src="images/07.jpg" width="88" height="126" alt="image 07" border="0" /></a></li>
+			<li><a href="#" title="image 08"><img src="images/08.jpg" width="88" height="126" alt="image 08" border="0" /></a></li>
+			<li><a href="#" title="image 09"><img src="images/09.jpg" width="88" height="126" alt="image 09" border="0" /></a></li>
+			<li><a href="#" title="image 10"><img src="images/10.jpg" width="88" height="126" alt="image 10" border="0" /></a></li>
+			<li><a href="#" title="image 11"><img src="images/11.jpg" width="88" height="126" alt="image 11" border="0" /></a></li>
+			<li><a href="#" title="image 12"><img src="images/12.jpg" width="88" height="126" alt="image 12" border="0" /></a></li>
+			<li><a href="#" title="image 13"><img src="images/13.jpg" width="88" height="126" alt="image 13" border="0" /></a></li>
+			<li><a href="#" title="image 14"><img src="images/14.jpg" width="88" height="126" alt="image 14" border="0" /></a></li>
+			<li><a href="#" title="image 15"><img src="images/15.jpg" width="88" height="126" alt="image 15" border="0" /></a></li>
+		</ul>
+	</div>
+	<span class="next"></span>
+</div>
+<span class="sac">To see this plugin in action, just resize this window...</span>
+
+
+<p>Liquid carousel is a jQuery plugin intented for liquid designs. Every time the container of the carousel gets resized, the number of items in the list change to fit the new width.</p>
+
+
+<p><br/></p>
+
+<p>In order to use liquid carousel, you have to include the jQuery library and the liquid carousel script your page:</p>
+<pre>
+&lt;script type="text/javascript" src="jquery-1.4.2.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="jquery.liquidcarousel.js"&gt;&lt;/script&gt;
+</pre>
+
+Then you need to add the items list and the navigation buttons in the body of your document:
+<pre>
+&lt;div id="liquid"&gt;
+	&lt;span class="previous"&gt;&lt;/span&gt;
+	&lt;div class="wrapper"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image.jpg" width="88" height="126" alt="image"/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image.jpg" width="88" height="126" alt="image"/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image.jpg" width="88" height="126" alt="image"/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image.jpg" width="88" height="126" alt="image"/&gt;&lt;/a&gt;&lt;/li&gt;
+			...
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;span class="next"&gt;&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+
+Finally you need to hook up the script using the $(document).ready() function:
+<pre>
+$(document).ready(function() {
+	$('#liquid').liquidcarousel({height:160});
+});
+</pre>
+
+<p>Bellow are all the available options with their default values:</p>
+<pre>
+$(document).ready(function() {
+	$('#liquid').liquidcarousel({
+		height: 150,		//the height of the list
+		duration: 100,		//the duration of the animation
+		hidearrows: true	//hide arrows if all of the list items are visible
+	});
+});
+</pre>
+
+</body>
+</html>
